@@ -78,7 +78,7 @@ const calculator = {
     case '=':
     handleOperator(value);
     break;
-    case '-':
+    case '.':
     inputDecimal(value);
     break;
     case 'all-clear':

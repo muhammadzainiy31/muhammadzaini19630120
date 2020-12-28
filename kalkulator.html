@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,34 +6,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Membuat Kalkulator Sederhana</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
+</script type="text/javascript">
+       function sinclicked(){
+           myform.mytxt.value=Math.sin(myform.mytxt.value);
+       }
 <body>
 <div class="calculator">
-
-<input type="text" class="calculator-screen" value="" disabled/>
+    <FORM NAME="Calc">
+<input type="text" Name="Input" class="calculator-screen" disabled/>
 <div class="calculator-keys">
-<button type="button" class="operator" value="+">+</button>
-<button type="button" class="operator" value="-">-</button>
-<button type="button" class="operator" value="*">&times;</button>
-<button type="button" class="operator" value="/">&divide;</button>
-<button type="button" value="7">7</button> 
-<button type="button" value="8">8</button>
-<button type="button" value="9">9</button> 
-<button type="button" value="4">4</button> 
-<button type="button" value="5">5</button>     
-<button type="button" value="6">6</button>  
-<button type="button" value="1">1</button>   
-<button type="button" value="2">2</button> 
-<button type="button" value="3">3</button>    
-<button type="button" value="0">0</button>  
-<button type="button" value="sin">sin</button>
-<button type="button" value="0">cos</button>
-<button type="button" value="0">tan</button>
-<button type="button" class="decimal" value=".">.</button>
-<button type="button" class="all-clear" value="all-clear">AC</button>
-<button type="button" class="equal-sign operator" value="=">=</button>
+<button type="button" NAME="plus" VALUE=" + " OnClick="Calc.Input.value += ' + '" class="operator" value="+">+</button>
+<button type="button" NAME="minus" VALUE=" - " OnClick="Calc.Input.value += ' - '" class="operator" value="-">-</button>
+<button type="button" NAME="sin" VALUE=" sin " OnClick="Calc.Input.value += ' sin '" class="operator" value="sin">sin</button>
+<button type="button" NAME="times" VALUE=" x " OnClick="Calc.Input.value += ' * '" class="operator" value="*">&times;</button>
+<button type="button" NAME="div" VALUE=" / " OnClick="Calc.Input.value += ' / '" class="operator">&divide;</button>
+<button type="button" NAME="seven" VALUE=" 7 " OnClick="Calc.Input.value += '7'" class="7">7</button> 
+<button type="button" NAME="eight" VALUE=" 8 " OnCLick="Calc.Input.value += '8'" class="8">8</button>
+<button type="button" NAME="nine" VALUE=" 9 " OnClick="Calc.Input.value += '9'" class="9">9</button> 
+<button type="button" NAME="four" VALUE=" 4 " OnClick="Calc.Input.value += '4'" class="4">4</button> 
+<button type="button" NAME="five" VALUE=" 5 " OnCLick="Calc.Input.value += '5'" class="5">5</button>     
+<button type="button" NAME="six" VALUE=" 6 " OnClick="Calc.Input.value += '6'" class="6">6</button>  
+<button type="button" NAME="one" VALUE=" 1 " OnClick="Calc.Input.value += '1'" class="1">1</button>
+<button type="button" NAME="two" VALUE=" 2 " OnCLick="Calc.Input.value += '2'" class="2">2</button>
+<button type="button" NAME="three" VALUE=" 3 " OnClick="Calc.Input.value += '3'" class="3">3</button>    
+<button type="button" NAME="zero" VALUE=" 0 " OnClick="Calc.Input.value += '0'" class="0">0</button>  
+<button type="button" NAME="decim" VALUE=" 0 " OnClick="Calc.Input.value += '.'" class="decimal">.</button>
+<button type="button" NAME="clear" VALUE=" c " OnClick="Calc.Input.value = ''" class="all-clear">AC</button>
+<button type="button" NAME="equal" VALUE=" = " OnClick="Calc.Input.value = eval(Calc.Input.value)" class="equal-sign operator">=</button>
 </div>
 </div>
-<script src="script.js"></script>
+
+
+</form>
 </body>
 </html>
